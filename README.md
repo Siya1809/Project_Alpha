@@ -24,12 +24,12 @@ Ce projet est un jeu de tir multijoueur en 3D, inspiré de jeux comme *Counter-S
   - `Tab` : Afficher le tableau des scores.
 - **Tir en vue FPS** : Expérience immersive de jeu de tir.
 - **Gestion des munitions et du rechargement** : Limitation des tirs par chargeur.
-- **Sélection de skins aléatoires** : Personnalisation visible par tous les joueurs.
+- **Sélection de skins** : Personnalisation visible par tous les joueurs.
 - **Interaction avec des bots** : Bots remplaçant les joueurs absents.
 - **Système de vote** : Permet de prendre des décisions collectives en jeu, comme redémarrer une partie ou modifier certaines règles.
 - **Gestion dynamique des bots** : Les bots quittent automatiquement lorsqu’un joueur humain rejoint, jusqu’à atteindre le maximum de joueurs autorisés.
 - **Fin de partie** : La partie se termine lorsqu’un joueur atteint 25 éliminations ou après 5 minutes de jeu.
-- **Tableau de scores interactif** : Permet d’identifier les joueurs et bots pour des votes collaboratifs.
+- **Tableau de scores interactif** : Permet d’identifier les joueurs et bots.
 
 ### Technique
 - **Multijoueur** : gestion des joueurs et de leurs interactions via Mirror.
