@@ -20,11 +20,9 @@ Le **Projet Alpha** est un jeu multijoueur en 3D développé avec Unity. Les pri
 ### **Étapes d'installation**
 1. Clonez le projet :
    ```bash
-   git clone https://forge.univ-lyon1.fr/p2100091/Unity.git
+   git clone https://github.com/Siya1809/Project_Alpha
    ```
-2. Importez le projet dans Unity via Unity Hub.
-3. Vérifiez que les dépendances (comme Mirror) sont bien installées dans le *Package Manager*.
-
+2. Le jeu se trouve directement sur la racine. avec Projet Alpha.exe
 ## 🔄 Utilisation
 
 ### Hôte
@@ -60,58 +58,6 @@ Pour des fins académiques, il est possible de lancer plusieurs instances du jeu
 - **Fin de partie** : La partie se termine lorsqu’un joueur atteint 25 éliminations ou après 5 minutes de jeu.
 - **Tableau des scores interactif** : Affiche les noms, kills, morts, et un bouton de vote (par défaut assigné aux bots).
 
-## 🗂 Organisation du code
-
-Le projet est structuré dans le dossier `Assets/Game`. Voici les principaux sous-dossiers et leur contenu :
-
-### **Scripts**
-Tous les scripts sont organisés en sous-dossiers pour une meilleure lisibilité :
-
-#### **Dossier `Data`**
-- `CharacterSkinData.cs` : Gestion des skins via un `ScriptableObject`.
-- `PlayerData.cs` : Gestion des données des joueurs (nom, skin, vie par défaut, etc.).
-
-#### **Dossier `IA`**
-- `IAController.cs` : Contrôle des mouvements et réactions des bots.
-
-#### **Dossier `MainMenu`**
-Scripts pour la scène de menu principal :
-- `CameraSwitch.cs` : Gestion des caméras dans le menu principal.
-- `MainMenuSC.cs` : Gestion des boutons et transmission des informations au jeu.
-- `SC_RotationScene.cs` : Rotation des personnages dans le menu.
-
-#### **Dossier `Player`**
-- `Player.cs` : Gestion des entrées clavier/souris et de la caméra.
-- `Character.cs` : Gestion de la vie, des positions de spawn et des dégâts.
-- `SC_DeathPlayerManager.cs` : Gestion des morts (gel des positions, temps de respawn).
-- `SC_RespawnPlayer.cs` : Passage entre la caméra de mort et la vue FPS.
-
-#### **Dossier `SelectionMenu`**
-- `Selection_Character_menu.cs` : Gestion de la sélection des skins dans le menu.
-
-#### **Dossier `ServeurSetup`**
-Scripts de gestion serveur :
-- `GameEndManager.cs` : Gestion des votes et fin de partie.
-- `GameManager.cs` : Liste des joueurs connectés.
-- `PlayerDataSync.cs` : Synchronisation des données entre joueurs.
-- `SC_PlayerSetup.cs` : Configuration des joueurs (skins, noms, désactivation de scripts inutiles).
-
-#### **Dossier `UI`**
-- **InGame UI** :
-  - `Crossair.cs` : Affichage du réticule.
-  - `SC_Ui.cs` : Affichage des informations du joueur.
-  - `SC_UiManager.cs` : Activation de l’UI pour le joueur concerné.
-- **Menu Esc** :
-  - `MenuManager.cs` : Gestion du tableau des scores.
-- **Effets** :
-  - `SC_TakeDmgEffect.cs` : Affichage d’une vignette rouge pour simuler les dégâts.
-
-#### **Dossier `Weapon`**
-Scripts des armes et tirs :
-- `SC_Bullet.cs` : Gestion des balles (trajectoire, dégâts).
-- `SC_Weapon.cs` : Gestion des armes (tir, rechargement).
-- `SC_WeaponManager.cs` : Gestion de l’arme équipée.
-- `SC_hited.cs` : Création d’effets à l’impact.
 
 ## 🕵️‍♂️ Contributeurs
 - **Mohamad Siyaman** :
